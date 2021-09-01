@@ -43,19 +43,17 @@ const url = "https://people.canonical.com/~anthonydillon/wp-json/wp/v2/posts.jso
 
             const innerContent = `
             <div class="p-card col-4">
-                <p class="p--heading-4 topic">${topics}</h5>
+                <p class="p--heading-4 topic">${topics}</p>
                 <hr class="hr-dotted">
                 <a href="${post.link}"><img width="380" src="${post.featured_media}" alt=""/></a>
                 <p class="p-heading--3 p-card__title">
                         <a href="${post.link}" class="blue">${title}</a>
-                </h3>
+                </p>
                 <p><em>By <a href="${author.link}" class="blue">${authorName}</a> on ${date}</em></p>
                 <hr class="hr-dotted">
                 <p class="p-heading--5 blog-category">${categories}</p>
-               
             </div>
             `
-
             postsContainer.innerHTML += innerContent;
         })
     });

@@ -58,15 +58,14 @@
             <div class="p-card col-4">
                 <h5 class="topic">${topics}</h5>
                 <hr class="hr-dotted">
-                <div class="blog-img">
-                    <a href="${post.link}"><img width="380" src="${post.featured_media}" alt=""/></a>
-                </div>
-                <div class="p-card__content">
-                    <h3 class="p-card__title class="blue"><a href="${post.link}">${post.title.rendered}</a></h3>
-                    <p><em>By <a href="${author.link}" class="blue">${author.name}</a> on ${date}</em></p>
-                    <hr class="hr-dotted">
-                    <p class="p-heading--4 blog-category">${categories}</p>
-                </div>
+                <a href="${post.link}"><img width="380" src="${post.featured_media}" alt=""/></a>
+                <h3 class="p-card__title">
+                        <a href="${post.link}" class="blue">${post.title.rendered}</a>
+                </h3>
+                <p><em>By <a href="${author.link}" class="blue">${author.name}</a> on ${date}</em></p>
+                <hr class="hr-dotted">
+                <p class="p-heading--4 blog-category">${categories}</p>
+               
             </div>
             `
 

@@ -1,0 +1,12 @@
+// Vanilla framework
+@import 'vanilla-framework/scss/vanilla';
+
+@import './scss/_additional-styling';
+
+// base Vanilla styles
+@include vf-base;
+
+// Components
+@include vf-p-card;
+@include vf-p-grid;
+@include vf-p-muted-heading;

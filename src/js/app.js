@@ -33,7 +33,6 @@ const url = "https://people.canonical.com/~anthonydillon/wp-json/wp/v2/posts.jso
             let topic = post._embedded["wp:term"][2][topic_index];
 
             while (typeof topic !== 'undefined') {
-                console.log(topic);
                 topics += topic.name + " ";
                 ++topic_index;
                 topic = post._embedded["wp:term"][2][topic_index];

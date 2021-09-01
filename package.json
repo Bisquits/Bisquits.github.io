@@ -1,0 +1,25 @@
+{
+  "name": "canonical-blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "css-loader": "^6.2.0",
+    "node-sass": "^6.0.1",
+    "normalize-scss": "^7.0.1",
+    "normalize.css": "^8.0.1",
+    "sass": "^1.38.2",
+    "sass-loader": "^12.1.0",
+    "style-loader": "^3.2.1",
+    "vanilla-framework": "^2.34.0",
+    "yarn": "^1.22.11"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "sass -w --load-path=node_modules src:dist --style=compressed",
+    "watch-css": "yarn build-css && sass --load-path=node_modules -w src:dist --style=compressed"
+  },
+  "author": "Melinda Uivari",
+  "license": "ISC"
+}

@@ -1,6 +1,5 @@
 body {
     font-family: "Ubuntu", "Helvetica Neue", sans-serif;
-
 }
 
 .latest-posts {
@@ -17,11 +16,9 @@ body {
         box-shadow: 0px 0px 4px 2px rgba(230,230,230,.5);
         border-top: 3px solid #a97da0;
         border-style: solid none none;
-
         display: grid;
-        grid-template-rows: 1.75em 0.65em auto 6.5em 3em 0.65em 1.75em;
+        grid-template-rows: 1.75em 0.65em auto 7em 3em 0.65em 1.75em;
  
-
         &__title {
             line-height: 2rem;
             font-size: 1.5rem;
@@ -45,10 +42,8 @@ body {
 }
 
 @media (min-width: 1681px) {
-    .latest-posts {
-        .topic {
-            font-size: 1rem;
-        }
+    .latest-posts .topic {
+        font-size: 1rem;
     }
 }
 
